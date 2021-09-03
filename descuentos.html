@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Title -->
+  <title>Descuentos</title>
+</head>
+<body>
+    <header class="header">
+      <img class="header__img" src="../assets/logo-platzi-video-BW2.png" alt="Platzi Video">
+      <div class="header__menu">
+        <div class="header__menu--profile">
+          <img src="./assets/user-icon.png" alt="">
+          <p>Perfil</p>
+        </div>
+        <ul>
+          <li><a href="/">Cuenta</a></li>
+          <li><a href="/">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="main">
+      <h2>Calcular Descuento</h2>
+      <section class="main_desc">
+        <form class="card_conteiner">
+          <input type="number" class="input" id="inPrecio" placeholder="Precio original">
+          <select name="Cupones" id="inDescuento">
+            <option value="0">No tengo</option>
+            <option value="10">10%</option>
+            <option value="20">20%</option>
+            <option value="30">30%</option>
+          </select>
+          <button type="button" onclick="calcularDescuento()">
+            Calcular el descuento
+          </button>
+          
+          <div>
+            <h2>Total a pagar:</h2>
+            <p id="Resultado"></p>
+          </div>
+          
+      </form>
+    </section>
+
+    <footer class="footer">
+      <a href="/">Terminos de uso</a>
+      <a href="/">Declaración de privacidad</a>
+      <a href="/">Centro de ayuda</a>
+    </footer>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
